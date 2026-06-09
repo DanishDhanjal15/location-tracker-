@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-HDN-Locator v1.0 - Cross Platform GPS Location Tracker
+Location tracker - Cross Platform GPS Location Tracker
 Works on: Windows, Kali Linux, Ubuntu, macOS
 Author: HasnainDarkNet
 """
@@ -22,7 +22,7 @@ import re
 import platform
 import socket
 
-class HDNLocator:
+class Locator:
     def __init__(self):
         self.port = 8080
         self.http_server = None
@@ -393,22 +393,6 @@ class HDNLocator:
     
     def show_banner(self):
         os.system('clear' if self.os_type != "Windows" else 'cls')
-        print("""
-╔════════════════════════════════════════════════════════════════════╗
-║                                                                    ║
-║     ██╗  ██╗██████╗ ███╗   ██║                                    ║
-║     ██║  ██║██╔══██╗████╗  ██║                                    ║
-║     ███████║██║  ██║██╔██╗ ██║                                    ║
-║     ██╔══██║██║  ██║██║╚██╗██║                                    ║
-║     ██║  ██║██████╔╝██║ ╚████║                                    ║
-║     ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═══╝                                    ║
-║                                                                    ║
-║                    HDN-Locator v1.0                                ║
-║         GPS Location Tracker | Anti-Spoofing                       ║
-║              [🐺] HasnainDarkNet [🐺]                               ║
-║                                                                    ║
-╚════════════════════════════════════════════════════════════════════╝
-        """)
         print(f"    [*] OS: {self.os_type}")
         print("    [*] Initializing...\n")
         time.sleep(1)
@@ -428,7 +412,7 @@ class HDNLocator:
         
         local_url = f"http://localhost:{self.port}"
         print("\n" + "="*60)
-        print("🎯 HDN-Locator READY!")
+        print("🎯 Location Tracker!")
         print("="*60)
         print(f"\n📱 Local URL: {local_url}")
         print(f"👁️  Viewer: {local_url}/view")
@@ -464,5 +448,5 @@ if __name__ == "__main__":
         print("Python 3 required!")
         sys.exit(1)
     
-    tracker = HDNLocator()
+    tracker = Locator()
     tracker.run()
