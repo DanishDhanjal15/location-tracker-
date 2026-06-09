@@ -1,7 +1,6 @@
-# HDN-Locator
-HDN-Locator - Advanced GPS Location Tracker with Anti-Spoofing | Capture exact GPS coordinates | Fake YouTube video page | Works on Windows, Linux &amp; macOS
-# 🐺 HDN-Locator v1.0
-<img width="1672" height="941" alt="ChatGPT Image May 5, 2026, 12_13_35 AM" src="https://github.com/user-attachments/assets/461ef4bd-e489-4dd9-a69f-681de6422e54" />
+
+Location tracker Advanced GPS Location Tracker with Anti-Spoofing | Capture exact GPS coordinates | Fake YouTube video page | Works on Windows, Linux &amp; macOS
+
 
 ## Advanced GPS Location Tracker Tool
 
